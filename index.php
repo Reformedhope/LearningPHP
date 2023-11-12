@@ -6,12 +6,13 @@
 // echo "<h1>my name is Stephanie</h1>";
 
 
-$age = 28;
+$data = ['kelly' => 'Salad', 'Sally' => 'hotdog', 'jane' => 'sandwich'];
 
-$data = null;
-$isLoggedIn = true;
-$hasBlogPosts;
-var_dump($isLoggedIn);
+$data['tom'] = 'chicken';
+
+$data['bob'] = 'tomato soup';
+
+var_dump($data);
 
 
 
@@ -19,4 +20,6 @@ var_dump($isLoggedIn);
 
 
 
-<h1>Hello world</h1>
+<h1>
+    Learning php
+</h1>
