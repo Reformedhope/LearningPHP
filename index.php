@@ -1,10 +1,11 @@
 
     <?php
-$data = 5;
-$data++ ;
+$age = 28;
+$permission = "";
+$data = !$permission;
 
 
-var_dump($data);
+var_dump($data)
 
 
 
