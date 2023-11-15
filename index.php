@@ -1,10 +1,10 @@
 
     <?php
+$data = 5;
+$data++ ;
 
-var_dump(
-    1 !== 1,
-    1 === "1"
-);
+
+var_dump($data);
 
 
 
