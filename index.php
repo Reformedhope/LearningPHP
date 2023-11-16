@@ -1,19 +1,19 @@
 
     <?php
    
-if (true){
- function getStatus() {
-    $paymentStatus = 2;
+
+ function getStatus($paymentStatus, $showMessage = true) {
     $message = match($paymentStatus){
         1 => 'Success',
         2 => 'denied',
         default => 'Unknown'
     };
+    if ($showMessage){
 
     var_dump($message);
  }
 }
- getStatus();
+ getStatus(1, true);
 
 
 ?> 
