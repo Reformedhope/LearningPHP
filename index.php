@@ -1,23 +1,19 @@
 
     <?php
    
+if (true){
+ function getStatus() {
+    $paymentStatus = 2;
+    $message = match($paymentStatus){
+        1 => 'Success',
+        2 => 'denied',
+        default => 'Unknown'
+    };
 
-   $paymentStatus = 1;
-
-
-switch( $paymentStatus){
-    case 1:
-        var_dump('success');
-        break;
-    case 2: 
-        var_dump('Pending');
-        break;
-    case 3: 
-        var_dump('Failed');
-        break;
-    default:
-        var_dump('unknown');
+    var_dump($message);
+ }
 }
+ getStatus();
 
 
 ?> 
