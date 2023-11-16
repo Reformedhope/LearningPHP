@@ -12,8 +12,10 @@
 
     var_dump($message);
  }
+ return $message;
 }
- getStatus(1, true);
+ $statusMessage = getStatus(1);
+ var_dump($statusMessage);
 
 
 ?> 
