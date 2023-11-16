@@ -2,17 +2,22 @@
     <?php
    
 
-   $score = 100;
+   $paymentStatus = 1;
 
-   if ($score >  90) {
-    var_dump("winner");
-   }elseif ($score > 80){
-    var_dump("loser");
-    }elseif ($score > 0){
-    var_dump("MEAT");
-   }else{
-    var_dump("paw");
-   }
+
+switch( $paymentStatus){
+    case 1:
+        var_dump('success');
+        break;
+    case 2: 
+        var_dump('Pending');
+        break;
+    case 3: 
+        var_dump('Failed');
+        break;
+    default:
+        var_dump('unknown');
+}
 
 
 ?> 
