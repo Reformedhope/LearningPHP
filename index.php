@@ -1,15 +1,10 @@
 
     <?php 
-for ($i = 1; $i <= 15;  $i++) {
-    echo $i . ",br>";
-    if ($i === 6 ){
-        // continue; 
-        // Or break 
-        // can be used
+$names = ['steph', 'kyle', 'Kassy ', 'Jane', 'Ruffus'];
 
-    }
-    
-
+foreach($names as $key => $name ) {
+    var_dump($key);
+var_dump($name);
 }
 
 
