@@ -1,22 +1,15 @@
 
     <?php 
-    declare(strict_types = 1);
- function getStatus( int | float $paymentStatus, bool $showMessage = true) : ?string
-  {
-    $message = match($paymentStatus){
-        1 => 'Success',
-        2 => 'denied',
-        default => 'Unknown'
-    };
-    if ($showMessage){
+function example () {
+    echo "exampled called!";
 
-    var_dump($message);
-    return null;
- }
- return $message;
+
+    return true;
 }
- $statusMessage = getStatus(1);
- var_dump($statusMessage);
+
+
+
+  var_dump( true && example());
 
 
 ?> 
