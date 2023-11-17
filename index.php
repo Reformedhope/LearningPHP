@@ -1,12 +1,16 @@
 
     <?php 
-$a = 1;
-do  {
-    echo $a , "<br>";
+for ($i = 1; $i <= 15;  $i++) {
+    echo $i . ",br>";
+    if ($i === 6 ){
+        // continue; 
+        // Or break 
+        // can be used
 
-$a++;
+    }
+    
 
-}while ($a <= 15 );
+}
 
 
 ?> 
