@@ -1,15 +1,12 @@
 
     <?php 
-function example () {
-    echo "exampled called!";
+$a = 1;
+do  {
+    echo $a , "<br>";
 
+$a++;
 
-    return true;
-}
-
-
-
-  var_dump( true && example());
+}while ($a <= 15 );
 
 
 ?> 
