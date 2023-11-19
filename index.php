@@ -1,14 +1,14 @@
+<?php 
 
-    <?php 
-$names = ['steph', 'kyle', 'Kassy ', 'Jane', 'Ruffus', 'Josh'];
-
-foreach($names as $key => $name ) {
-    var_dump($key);
-var_dump($name);
+function isLeap(int $year): bool {
+    return ($year % 4 === 0 && ($year % 100 !== 0 || $year % 400 === 0));
 }
 
+var_dump(isLeap(2000)); // Should return true
+var_dump(isLeap(2022)); // Should return false
 
-?> 
+?>
+
 
 
 

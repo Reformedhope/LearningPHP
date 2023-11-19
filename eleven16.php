@@ -60,3 +60,16 @@ for ($i = 1; $i <= 15;  $i++) {
 ?>
 
 
+//------
+<?php 
+$names = ['steph', 'kyle', 'Kassy ', 'Jane', 'Ruffus'];
+
+foreach($names as $key => $name ) {
+    var_dump($key);
+var_dump($name);
+}
+
+
+?> 
+
+
