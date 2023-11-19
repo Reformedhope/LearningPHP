@@ -1,16 +1,10 @@
 <?php 
-$names = ['John', 'Lyle', 'paul'];
+//rounding values
+// echo floor(6.9);
+// echo floor(-0.1);
+// echo ceil(5.454);
 
-print_r($names);
-
-unset ($names[1]);
-
-
-
-
-$names = array_values($names);
-
-print_r($names);
+echo round(5.455, 2, PHP_ROUND_HALF_DOWN);
 ?>
 
 
