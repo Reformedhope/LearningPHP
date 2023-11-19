@@ -1,14 +1,16 @@
 <?php 
-//alternative to using the cost keyword
-if (!defined('FOO')){
+$names = ['John', 'Lyle', 'paul'];
+
+print_r($names);
+
+unset ($names[1]);
 
 
-//define constants within a class= reason for existing.
-//used within a conditional statement
-define('FOO', 'Hello World');
-}
-echo FOO;
 
+
+$names = array_values($names);
+
+print_r($names);
 ?>
 
 
