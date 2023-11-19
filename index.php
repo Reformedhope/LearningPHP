@@ -1,15 +1,10 @@
-<?php 
-//rounding values
-// echo floor(6.9);
-// echo floor(-0.1);
-// echo ceil(5.454);
+<?php $permissions = 1 ;?>
 
-echo round(5.455, 2, PHP_ROUND_HALF_DOWN);
-?>
+<?php if ($permissions === 1): ?>
+    <h1> Hello admin </h1>
+<?php elseif ($permissions === 2): ?>
+    <h1> Hello Mod </h1>
+<?php else : ?>
+<h1> Hello guest</h1>
 
-
-
-
-<h1>
-    Learning php
-</h1>
+    <?php endif; ?>

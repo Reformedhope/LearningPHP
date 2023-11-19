@@ -14,9 +14,6 @@ echo PHP_INT_MIN . "<br>";
 echo PHP_FLOAT_MIN;
 
 ?>
-
-
-
 //------------
 
 <?php 
@@ -26,8 +23,6 @@ echo PHP_INT_MIN . "<br>";
 echo PHP_FLOAT_MIN;
 
 ?>
-
-
 
 //------------
 
@@ -43,8 +38,6 @@ define('FOO', 'Hello World');
 echo FOO;
 
 ?>
-
-
 
 //------------
 
@@ -63,8 +56,33 @@ $names = array_values($names);
 print_r($names);
 ?>
 
+//------------
+
+<?php 
+//rounding values
+// echo floor(6.9);
+// echo floor(-0.1);
+// echo ceil(5.454);
+
+echo round(5.455, 2, PHP_ROUND_HALF_DOWN);
+?>
+
+//------------
+<?php 
+// admin - 1, mod - 1, gus - any other number
+
+$permision = 1;
+if ($permission === 1){
+    ?> "<h1> hello admin</h1>";<?php
+} else if ($permission === 2) {
+    ?> "<h1> hello mod</h1>"<?php
+} else {
+    ?> "<h1> hello guest</h1>"<?php
+}
 
 
+
+?>
 //------------
 
 
@@ -76,13 +94,41 @@ print_r($names);
 
 
 
+//------------
+
+
+//------------
+
+
+
+//------------
+
+
+
+//------------
+
+
+
+//------------
+
+
+
+//------------
+
+
+
+//------------
+
+
+
+//------------
+
+
 
 //------------
 
 
 
 
-
-//------------
 
 
