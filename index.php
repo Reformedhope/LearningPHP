@@ -1,7 +1,13 @@
 <?php 
+//alternative to using the cost keyword
+if (!defined('FOO')){
 
-echo __LINE__ . "<br>";
-echo __DIR__;
+
+//define constants within a class= reason for existing.
+//used within a conditional statement
+define('FOO', 'Hello World');
+}
+echo FOO;
 
 ?>
 
