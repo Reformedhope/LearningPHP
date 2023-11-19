@@ -84,14 +84,42 @@ if ($permission === 1){
 
 ?>
 //------------
+<?php $permissions = 1 ;?>
 
+<?php if ($permissions === 1): ?>
+    <h1> Hello admin </h1>
+<?php elseif ($permissions === 2): ?>
+    <h1> Hello Mod </h1>
+<?php else : ?>
+<h1> Hello guest</h1>
 
-
-
-
+    <?php endif; ?>
 //------------
+<?php if (getPermission() === 1): ?>
+    <h1> Hello admin </h1>
+<?php elseif (getPermission() === 2): ?>
+    <h1> Hello Mod </h1>
+<?php else : ?>
+<h1> Hello guest</h1>
 
+    <?php endif; ?>
+//-----Conti
+<?php
 
+function getPermission (){
+    sleep(2);
+    return 1;
+}
+
+Function getUsers(){
+    sleep(2);
+
+    return['John', 'Jane'];
+}
+
+for ($i = 0; $i < count(getUsers()); $i++)
+echo $i;
+?>
 
 
 //------------

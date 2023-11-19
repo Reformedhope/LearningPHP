@@ -1,10 +1,16 @@
-<?php $permissions = 1 ;?>
+<?php
 
-<?php if ($permissions === 1): ?>
-    <h1> Hello admin </h1>
-<?php elseif ($permissions === 2): ?>
-    <h1> Hello Mod </h1>
-<?php else : ?>
-<h1> Hello guest</h1>
+function getPermission (){
+    sleep(2);
+    return 1;
+}
 
-    <?php endif; ?>
+Function getUsers(){
+    sleep(2);
+
+    return['John', 'Jane'];
+}
+
+for ($i = 0; $i < count(getUsers()); $i++)
+echo $i;
+?>
