@@ -2,14 +2,12 @@
 
 <?php
 
-function sum(bool $dumpArr, int|float ...$nums) {
-    if ($dumpArr){
-    var_dump($nums);
-    }
-    return array_sum($nums);
+function sum($a, $b) {
+   
+    return $a + $b ;
 }
 
-echo sum(5,2,9,1);
+echo sum( b:5, a:2);
 
 ?>
 
